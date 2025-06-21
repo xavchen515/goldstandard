@@ -126,3 +126,103 @@ body {
     margin-bottom: 1.2rem;
   }
   
+.service-logo {
+  height: 40px;
+  margin: 0 0.5rem;
+}
+
+/* Services Cards */
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(168, 107, 60, 0.08);
+  transition: transform 0.2s;
+  border: none;
+}
+.service-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 32px rgba(168, 107, 60, 0.15);
+}
+.service-icon i {
+  font-size: 2.2rem;
+  color: #a86b3c;
+}
+
+/* Why Choose Us */
+.why-choose-us-section {
+  background: linear-gradient(120deg, #f7ede6 0%, #e6f7f7 100%);
+}
+.why-photo {
+  width: 100%;
+  max-width: 340px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(168, 107, 60, 0.10);
+}
+.why-features .why-icon i {
+  font-size: 1.6rem;
+  color: #a86b3c;
+}
+.why-feature strong {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1.1rem;
+}
+
+/* Customer Service Box */
+.customer-service-box {
+  background: #ececec;
+  box-shadow: 0 2px 12px rgba(168, 107, 60, 0.10);
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+/* Testimonials */
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(168, 107, 60, 0.10);
+  text-align: center;
+}
+.testimonial-text {
+  font-size: 1.05rem;
+  color: #333;
+  font-style: italic;
+}
+.testimonial-author {
+  font-weight: 600;
+  color: #a86b3c;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 991px) {
+  .why-choose-us-section .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .why-photo {
+    margin: 0 auto 2rem auto;
+  }
+}
+@media (max-width: 767px) {
+  .service-card,
+  .testimonial-card {
+    padding: 1.5rem 1rem;
+  }
+  .logo-carousel {
+    padding: 1rem 0.5rem;
+    gap: 1rem;
+  }
+  .why-features {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 575px) {
+  .logo-carousel-title {
+    font-size: 1rem;
+  }
+  .service-logo {
+    height: 32px;
+  }
+  .testimonial-card {
+    font-size: 0.95rem;
+  }
+}
