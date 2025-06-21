@@ -284,7 +284,7 @@ section {
 .why-feature {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .feature-icon {
   width: 50px;
@@ -294,7 +294,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1.5rem;
+  margin-right: 2rem;
   flex-shrink: 0;
 }
 .feature-icon i {
@@ -303,12 +303,13 @@ section {
 }
 .feature-content h5 {
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   color: var(--text-dark);
 }
 .feature-content p {
   color: var(--text-muted);
-  margin: 0;
+  margin-bottom: 2.25rem;
+  font-size: 1.3rem;
 }
 
 /* CTA Section */
@@ -332,24 +333,41 @@ section {
 
 /* Testimonials */
 .testimonial-card {
-  background: var(--white);
-  border-radius: 12px;
-  padding: 2rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(139,93,60,0.08);
+  padding: 2.2rem 1.5rem 2rem 1.5rem;
   text-align: center;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Ensures author is always at the bottom */
   height: 100%;
+  min-height: 220px; /* Adjust as needed for your design */
 }
-.testimonial-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-}
+
 .testimonial-card p {
   font-style: italic;
   color: var(--text-muted);
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
 }
+
+.testimonial-text {
+  flex: 1 1 auto;
+  font-size: 1.13rem;
+  color: #6C757D;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
 .testimonial-author {
   font-weight: 600;
   color: var(--primary-color);
@@ -454,24 +472,24 @@ section {
 
 /* Responsive Design */
 @media (max-width: 991px) {
-  .hero-title { font-size: 2.8rem; }
-  .hero-highlight { font-size: 1.6rem; }
+  .hero-title { font-size: 4.2rem; margin-bottom: 2.4rem; }
+  .hero-highlight { font-size: 2.4rem; margin-top: 1.37rem; }
   .hero-img { max-width: 180px; }
   .hero-section { text-align: center; padding: 100px 0 60px; }
   .why-photo {
-    max-width: 220px;  /* Even smaller on tablets/mobile */
+    max-width: 220px;
   }
 }
 @media (max-width: 767px) {
-  .hero-title { font-size: 2.2rem; }
-  .hero-highlight { font-size: 1.1rem; }
+  .hero-title { font-size: 3.3rem; margin-bottom: 1.885rem;}
+  .hero-highlight { font-size: 1.65rem; margin-top: 0.857rem; }
   .logo-carousel { gap: 1rem; padding: 1.5rem; }
   .logo-item img { height: 30px; }
 }
 @media (min-width: 1200px) {
   .container { max-width: 1400px; }
-  .hero-title { font-size: 3.5rem; }
-  .hero-highlight { font-size: 2.5rem; }
+  .hero-title { font-size: 5.25rem; margin-bottom: 3rem; }
+  .hero-highlight { font-size: 4.25rem; margin-top: 1.5rem; }
   .hero-text { font-size: 1.3rem; }
   .hero-img { max-width: 420px; }
 }
