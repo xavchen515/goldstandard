@@ -166,9 +166,13 @@ body {
 }
 
 .hero-img {
-  max-width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  max-width: 260px;   /* Makes the image smaller on desktop */
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(139,93,60,0.10);
+  margin: 0 auto;
+  display: block;
 }
 
 /* Logo Section */
@@ -475,6 +479,10 @@ section {
 @media (max-width: 991px) {
   .hero-title {
     font-size: 2.8rem;
+  }
+
+  .hero-img {
+    max-width: 180px;
   }
   
   .hero-section {

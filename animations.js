@@ -77,16 +77,6 @@ const observerOptions = {
     });
   });
   
-  // Parallax effect for hero section (subtle)
-  window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const heroImg = document.querySelector('.hero-img');
-    
-    if (heroImg && scrolled < window.innerHeight) {
-      heroImg.style.transform = `translateY(${scrolled * 0.3}px)`;
-    }
-  });
-  
   // Add loading animation
   window.addEventListener('load', () => {
     document.body.classList.add('loaded');
