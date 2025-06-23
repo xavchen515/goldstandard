@@ -166,7 +166,6 @@ body {
   letter-spacing: 0.02em;
   text-shadow: 0 2px 8px #fff;
   animation: bounceText 2s infinite;
-  margin-top: 1rem;
 }
 .scroll-down-arrow {
   font-size: 2rem;
@@ -544,6 +543,10 @@ section {
   .hero-highlight { font-size: 1.65rem; margin-top: 0.857rem; }
   .logo-carousel { gap: 1rem; padding: 1.5rem; }
   .logo-item img { height: 30px; }
+  .hero-section { padding-bottom: 120px; }
+  .hero-section .btn-primary {
+    margin-bottom: 2.5rem;
+  }
 }
 @media (min-width: 1200px) {
   .container { max-width: 1400px; }
