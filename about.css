@@ -1,28 +1,73 @@
 /* ABOUT PAGE STYLES */
 
+/* Navbar */
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  font-family: 'Inter', sans-serif;
+}
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #a86b3c !important;
+  font-size: 1.5rem;
+}
+.nav-link {
+  color: #2C3E50 !important;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.btn-primary {
+  background: #a86b3c;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: #e89a4c;
+}
+
 /* Hero Banner */
 .about-hero-banner {
-  background: linear-gradient(to bottom, rgba(34,34,34,0.55) 60%, rgba(34,34,34,0.18)), url('images/about-hero.jpg') center center/cover no-repeat;
-  min-height: 220px;
+  position: relative;
+  min-height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url('background.jpg') center center/cover no-repeat;
+  margin-bottom: 0;
+}
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(34,34,34,0.65) 65%, rgba(34,34,34,0.22));
+  z-index: 1;
+}
+.about-hero-content {
   position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .about-hero-banner h1 {
   color: #fff;
   font-family: 'Playfair Display', serif;
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: 700;
   text-shadow: 0 2px 8px rgba(0,0,0,0.18);
-  z-index: 2;
   margin: 0;
   letter-spacing: 0.04em;
+  text-align: center;
 }
 
 /* Main Section */
 .about-section {
-  background: linear-gradient(135deg, #f8f6f3 0%, #e9e3db 100%);
+  background: linear-gradient(135deg, #ede7df 0%, #e9e3db 100%);
   padding: 0 0 2.5rem 0;
 }
 .about-main-content {
@@ -175,36 +220,56 @@
 .about-testimonials {
   margin: 2.5rem 0;
 }
+.about-testimonials-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #232323;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.01em;
+}
 .about-testimonials-row {
   display: flex;
-  gap: 1.5rem;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: stretch;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .about-testimonial-card {
-  flex: 1 1 0;
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(139,93,60,0.07);
-  padding: 1.2rem 1rem 1rem 1rem;
-  min-width: 220px;
-  max-width: 350px;
+  border-radius: 22px;
+  box-shadow: 0 4px 32px rgba(139,93,60,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  min-width: 260px;
+  max-width: 410px;
+  flex: 1 1 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 120px;
-  transition: box-shadow 0.18s;
+  min-height: 200px;
+  transition: box-shadow 0.18s, transform 0.18s;
+  margin-bottom: 0;
 }
 .about-testimonial-card:hover {
-  box-shadow: 0 5px 20px rgba(139,93,60,0.13);
+  box-shadow: 0 8px 40px rgba(139,93,60,0.13);
+  transform: translateY(-4px) scale(1.02);
 }
-.about-testimonial-card .about-testimonial-author {
-  font-weight: 600;
+.about-testimonial-card > div:first-child {
+  font-size: 1.15rem;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 2.1rem;
+  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
+}
+.about-testimonial-author {
+  font-weight: 700;
   color: #a86b3c;
-  margin-top: 1.2rem;
-  font-size: 1.02rem;
+  font-size: 1.08rem;
+  letter-spacing: 0.01em;
 }
 
 /* Customer Service */
@@ -228,7 +293,8 @@
 
 /* Responsive tweaks */
 @media (max-width: 991px) {
-  .about-main-content, .about-details-row, .about-testimonials-row, .about-stats, .about-process {
+  .about-hero-banner h1 { font-size: 2rem; }
+  .about-main-content, .about-details-row, .about-stats, .about-process {
     flex-direction: column;
     gap: 1.5rem;
   }
@@ -239,7 +305,15 @@
   .about-section {
     padding-bottom: 1.2rem;
   }
-  .about-hero-banner h1 { font-size: 2rem; }
+  .about-testimonials-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .about-testimonial-card {
+    max-width: 500px;
+    width: 100%;
+  }
 }
 @media (max-width: 575px) {
   .about-hero-banner h1 { font-size: 1.4rem; }
