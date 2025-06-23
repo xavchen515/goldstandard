@@ -34,10 +34,13 @@
 .about-hero-banner {
   position: relative;
   min-height: 260px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('background.jpg') center center/cover no-repeat;
+  background: 
+    linear-gradient(to bottom, rgba(34,34,34,0.65), rgba(34,34,34,0.22)),
+    url('background.jpg') center center/cover no-repeat;
   margin-bottom: 0;
 }
 .about-hero-overlay {
@@ -54,6 +57,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .about-hero-banner h1 {
   color: #fff;
   font-family: 'Playfair Display', serif;
@@ -64,6 +68,7 @@
   letter-spacing: 0.04em;
   text-align: center;
 }
+
 
 /* Main Section */
 .about-section {
