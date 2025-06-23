@@ -83,7 +83,6 @@ body {
   position: relative;
   list-style: none;
   transition: background 0.2s;
-  text-transform: uppercase;
   letter-spacing: 0.01em;
 }
 
