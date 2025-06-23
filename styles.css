@@ -334,6 +334,7 @@ section {
   border-radius: 12px;
   padding: 2rem;
   text-align: center;
+  background: #ececec;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
 }
 .cta-content p {
