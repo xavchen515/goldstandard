@@ -30,25 +30,19 @@
   background: #e89a4c;
 }
 
-/* Hero Banner */
 .about-hero-banner {
   position: relative;
-  min-height: 260px;
   width: 100%;
+  min-height: 380px; /* Increased height for a bolder look */
   display: flex;
   align-items: center;
   justify-content: center;
   background: 
-    linear-gradient(to bottom, rgba(34,34,34,0.65), rgba(34,34,34,0.22)),
-    url('background.jpg') center center/cover no-repeat;
+    linear-gradient(to bottom, rgba(34,34,34,0.68), rgba(34,34,34,0.18)),
+    url('images/background.jpg') center center/cover no-repeat;
   margin-bottom: 0;
 }
-.about-hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(34,34,34,0.65) 65%, rgba(34,34,34,0.22));
-  z-index: 1;
-}
+
 .about-hero-content {
   position: relative;
   z-index: 2;
@@ -61,13 +55,27 @@
 .about-hero-banner h1 {
   color: #fff;
   font-family: 'Playfair Display', serif;
-  font-size: 2.6rem;
+  font-size: 3.2rem;
   font-weight: 700;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.22);
   margin: 0;
   letter-spacing: 0.04em;
   text-align: center;
 }
+
+@media (max-width: 991px) {
+  .about-hero-banner {
+    min-height: 220px;
+  }
+  .about-hero-banner h1 { font-size: 2rem; }
+}
+@media (max-width: 575px) {
+  .about-hero-banner {
+    min-height: 120px;
+  }
+  .about-hero-banner h1 { font-size: 1.4rem; }
+}
+
 
 
 /* Main Section */
