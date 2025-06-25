@@ -6,25 +6,6 @@ body {
   padding: 0;
 }
 
-.navbar {
-  background: #fff;
-  border-bottom: 1px solid #eee;
-  font-family: 'Inter', sans-serif;
-}
-
-.navbar-brand {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  color: #a86b3c !important;
-  font-size: 1.5rem;
-}
-
-.nav-link {
-  color: #2C3E50 !important;
-  font-weight: 500;
-  font-size: 1.1rem;
-}
-
 .btn-primary {
   background: #a86b3c;
   border: none;
