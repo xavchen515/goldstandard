@@ -1,4 +1,10 @@
 /* SERVICES PAGE STYLES - BLACK BACKGROUND & GOLD TEXT THEME */
+.navbar, 
+.navbar-nav, 
+.dropdown-menu {
+  z-index: 9999 !important;
+  position: relative !important;
+}
 
 body {
   font-family: 'Inter', sans-serif;
