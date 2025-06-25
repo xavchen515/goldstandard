@@ -20,6 +20,7 @@ body {
     linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.6)),
     url('images/background.jpg') center center/cover no-repeat;
   margin-bottom: 0;
+  padding-top: 80px; /* Fix: push hero content below navbar */
 }
 
 .services-hero-content {
@@ -43,12 +44,23 @@ body {
 }
 
 @media (max-width: 991px) {
-  .services-hero { min-height: 220px; }
-  .services-hero h1 { font-size: 2rem; }
+  .services-hero { 
+    min-height: 220px;
+    padding-top: 72px; /* Fix: push hero content below navbar on tablets */
+  }
+  .services-hero h1 { 
+    font-size: 2rem; 
+  }
 }
+
 @media (max-width: 575px) {
-  .services-hero { min-height: 120px; }
-  .services-hero h1 { font-size: 1.4rem; }
+  .services-hero { 
+    min-height: 120px;
+    padding-top: 64px; /* Fix: push hero content below navbar on mobile */
+  }
+  .services-hero h1 { 
+    font-size: 1.4rem; 
+  }
 }
 
 .services-main {
@@ -218,14 +230,10 @@ p {
 
 /* Responsive tweaks */
 @media (max-width: 991px) {
-  .services-hero { min-height: 220px; }
-  .services-hero h1 { font-size: 2rem; }
   .services-cards-title { font-size: 1.15rem; }
 }
 
 @media (max-width: 767px) {
-  .services-hero { min-height: 120px; }
-  .services-hero h1 { font-size: 1.4rem; }
   .service-card2 { padding: 1.5rem 1rem 1.2rem 1rem; }
 }
 
