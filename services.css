@@ -20,7 +20,6 @@ body {
     linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.6)),
     url('images/background.jpg') center center/cover no-repeat;
   margin-bottom: 0;
-  padding-top: 80px; /* Fix: push hero content below navbar */
 }
 
 .services-hero-content {
@@ -45,8 +44,8 @@ body {
 
 @media (max-width: 991px) {
   .services-hero { 
-    min-height: 220px;
-    padding-top: 72px; /* Fix: push hero content below navbar on tablets */
+    min-height: 280px; /* Increased height for better spacing */
+    padding-top: 100px; /* Increased padding to push title higher */
   }
   .services-hero h1 { 
     font-size: 2rem; 
@@ -55,11 +54,26 @@ body {
 
 @media (max-width: 575px) {
   .services-hero { 
-    min-height: 120px;
-    padding-top: 64px; /* Fix: push hero content below navbar on mobile */
+    min-height: 220px; /* Increased from 120px for much better spacing */
+    padding-top: 120px; /* Significantly increased padding for mobile */
+    padding-bottom: 40px; /* Added bottom padding for better balance */
   }
   .services-hero h1 { 
-    font-size: 1.4rem; 
+    font-size: 1.6rem; /* Slightly larger for better visibility */
+    line-height: 1.2; /* Better line height for mobile */
+    margin-top: 0; /* Ensure no extra margin */
+  }
+}
+
+/* Additional mobile-specific fix for very small screens */
+@media (max-width: 480px) {
+  .services-hero { 
+    min-height: 200px;
+    padding-top: 110px;
+    padding-bottom: 30px;
+  }
+  .services-hero h1 {
+    font-size: 1.5rem;
   }
 }
 
