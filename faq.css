@@ -1,14 +1,14 @@
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #f8f6f3 0%, #e9e3db 100%);
-  color: #2C3E50;
+  background: #111; /* Black background */
+  color: #FFD700;   /* Gold text */
   margin: 0;
   padding: 0;
 }
 
 .faq-section {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f8f6f3 0%, #e9e3db 100%);
+  background: #111; /* Black background */
   padding: 120px 0 60px 0;
 }
 
@@ -16,7 +16,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #22324A;
+  color: #FFD700; /* Gold */
   text-align: center;
   margin-bottom: 2.5rem;
   letter-spacing: 0.03em;
@@ -24,9 +24,9 @@ body {
 
 /* FAQ Accordion Styles */
 .faq-detail {
-  background: #fff;
+  background: #222; /* Dark card background */
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(139,93,60,0.07);
+  box-shadow: 0 2px 12px rgba(255, 215, 0, 0.07); /* Gold shadow */
   margin-bottom: 1.2rem;
   overflow: hidden;
   transition: box-shadow 0.2s;
@@ -35,13 +35,13 @@ body {
 }
 
 .faq-detail[open] {
-  box-shadow: 0 4px 18px rgba(139,93,60,0.13);
+  box-shadow: 0 4px 18px rgba(255, 215, 0, 0.13); /* Gold shadow */
 }
 
 .faq-detail summary {
   font-size: 1.13rem;
   font-weight: 700;
-  color: #22324A;
+  color: #FFD700; /* Gold */
   padding: 1.2rem 1.5rem;
   cursor: pointer;
   outline: none;
@@ -58,7 +58,7 @@ body {
   position: absolute;
   right: 1.5rem;
   font-size: 1.5rem;
-  color: #a86b3c;
+  color: #FFD700; /* Gold */
   font-weight: 700;
   transition: transform 0.2s;
 }
@@ -73,10 +73,10 @@ body {
 
 .faq__content {
   padding: 0 1.5rem 1.2rem 1.5rem;
-  color: #6C757D;
+  color: gold; /* Gold */
   font-size: 1.07rem;
-  border-top: 1px solid #f0ecea;
-  background: #fff;
+  border-top: 1px solid #333; /* Subtle dark border */
+  background: #222; /* Dark card background */
   animation: sweep .35s ease-in;
 }
 
@@ -84,6 +84,7 @@ body {
   0% {opacity: 0; margin-top: -10px;}
   100% {opacity: 1; margin-top: 0px;}
 }
+
 /* Responsive tweaks */
 @media (max-width: 991px) {
   .faq-title { font-size: 2rem; }
