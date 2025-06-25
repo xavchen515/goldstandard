@@ -47,17 +47,15 @@ body {
 
 @media (max-width: 991px) {
   .about-hero-banner {
-    min-height: 220px;
-    padding-top: 72px; /* Fix: push hero content below navbar on tablets */
+    min-height: 280px;
   }
   .about-hero-banner h1 { font-size: 2rem; }
 }
 @media (max-width: 575px) {
   .about-hero-banner {
-    min-height: 120px;
-    padding-top: 64px; /* Fix: push hero content below navbar on mobile */
+    min-height: 220px;
   }
-  .about-hero-banner h1 { font-size: 1.4rem; }
+  .about-hero-banner h1 { font-size: 1.6rem; }
 }
 
 /* Main Section */
