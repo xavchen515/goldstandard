@@ -505,6 +505,9 @@ section {
 .footer-contact li {
   margin-bottom: 0.5rem;
   color: var(--text-muted);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.4;
 }
 .footer-contact i {
   margin-right: 0.5rem;
