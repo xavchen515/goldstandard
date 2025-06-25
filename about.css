@@ -2,14 +2,15 @@
 .about-hero-banner {
   position: relative;
   width: 100%;
-  min-height: 380px; /* Increased height for a bolder look */
+  min-height: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: 
+  background:
     linear-gradient(to bottom, rgba(34,34,34,0.68), rgba(34,34,34,0.18)),
     url('images/background.jpg') center center/cover no-repeat;
   margin-bottom: 0;
+  padding-top: 80px; /* Fix: push hero content below navbar */
 }
 
 .about-hero-content {
@@ -24,7 +25,7 @@
 .about-hero-banner h1 {
   color: #fff;
   font-family: 'Playfair Display', serif;
-  font-size: 3.2rem;
+  font-size: clamp(1.8rem, 6vw, 2.8rem); /* min, preferred, max */
   font-weight: 700;
   text-shadow: 0 2px 8px rgba(0,0,0,0.22);
   margin: 0;
@@ -32,20 +33,96 @@
   text-align: center;
 }
 
+
 @media (max-width: 991px) {
   .about-hero-banner {
     min-height: 220px;
+    padding-top: 72px; /* Fix: push hero content below navbar on tablets */
   }
   .about-hero-banner h1 { font-size: 2rem; }
 }
 @media (max-width: 575px) {
   .about-hero-banner {
     min-height: 120px;
+    padding-top: 64px; /* Fix: push hero content below navbar on mobile */
   }
   .about-hero-banner h1 { font-size: 1.4rem; }
 }
 
+/* Main Section */
+.about-section {
+  background: linear-gradient(135deg, #ede7df 0%, #e9e3db 100%);
+  padding: 4.5rem 0 2.5rem 0;
+}
 
+.about-main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+}
+.about-main-content .about-text {
+  flex: 1 1 340px;
+  min-width: 260px;
+}
+.about-main-content .about-main-img {
+  flex: 1 1 260px;
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-main-img img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(34,34,34,0.08);
+}
+
+/* Stats */
+.about-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 2.5rem 0 2.5rem 0;
+  gap: 1.5rem;
+}
+.about-stat {
+  flex: 1 1 0;
+  text-align: center;
+  color: #8B5D3C;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.1rem 0.5rem 0.8rem 0.5rem;
+  box-shadow: 0 2px 8px rgba(139,93,60,0.06);
+}
+.about-stat strong {
+  display: block;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #2C3E50;
+  letter-spacing: 0.02em;
+}
+.about-stat span {
+  display: block;
+  font-size: 1.08rem;
+  color: #6C757D;
+  margin-top: 0.2rem;
+}
+
+/* Center stats on mobile */
+@media (max-width: 575px) {
+  .about-stats {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .about-stat {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* Main Section */
 .about-section {
