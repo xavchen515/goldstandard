@@ -1,2 +1,2 @@
 # goldstandard
-gold standard moving
+https://goldstandard.vercel.app
